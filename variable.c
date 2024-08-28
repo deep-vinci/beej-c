@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void) {
 
@@ -8,6 +9,20 @@ int main(void) {
     char *d = "Hello, world!";
     
     printf(" %d \n %f \n %c \n %s \n", a, b, c, d);
+
+
+    int x = 1;
+
+    if (!x) {
+        printf("x is true\n");
+    }
+
+    bool y = 1;
+
+    if (y) {
+        printf("x is true, by stdbool\n");
+    }
+    
 }
 
 /*
@@ -24,5 +39,8 @@ each memory index can be refered to it by its index or address, or a loc or a po
 %f = float
 %c = char
 %s = string or (char *)
+
+#include <stdbool.h> to use bool type 
+which is just a syntactic sugar over 1 and 0
 
 */
